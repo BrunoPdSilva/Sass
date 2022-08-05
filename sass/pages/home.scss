@@ -1,7 +1,16 @@
+@mixin text-style($color, $font-size, $font-weight){
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+.h1text {
+  @include text-style(green, 30px, bold)
+}
+
 .textBuy {
-  font-size: 22px;
+  @include text-style(red, 24px, light);
   font-family: Arial, Helvetica, sans-serif;
-  color: $primary-color;
 }
 
 .btn {
